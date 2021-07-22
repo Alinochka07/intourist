@@ -3,5 +3,6 @@ from .views import places
 
 
 urlpatterns = [
-    path('', places, name='places-list')
+    path('', places, name='places-list'),
+    
 ]

@@ -19,3 +19,6 @@ class Place(models.Model):
         ordering = ['name']
 
 
+
+
+
