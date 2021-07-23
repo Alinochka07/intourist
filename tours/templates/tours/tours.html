@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block page %}
+    <div style="padding-left: 40px;">
+    <h2>Туры по Кыргызстану</h2></div>
+    {% for tour in tours %} 
+        <div>
+            <ul><h3>{{ tour.name}}: </h3>
+                {{ tour.description}}</ul></div>
+    {% endfor %}
+    
+{% endblock %}
