@@ -4,6 +4,9 @@
 
     <h2>{{ place_object.name }}</h2>
     <h4>Местонахождение: {{ place_object.location }}</h4>
+    {% if place_object.img %}
+        <img src="{{ place_object.img.url }}", width="700px" alt="">
+    {% endif %}
     <div><p style="font-style: italic;">Описание: </p>
         {{ place_object.description }}</div>
     <hr>
